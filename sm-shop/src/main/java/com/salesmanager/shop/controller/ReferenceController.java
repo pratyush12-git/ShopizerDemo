@@ -68,6 +68,7 @@ public class ReferenceController {
 	public @ResponseBody ResponseEntity<String> getProvinces(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("TIA Change");
 		System.out.println("Pull Request");
+		System.out.println("PR 1");
 		String countryCode = request.getParameter("countryCode");
 		String lang = request.getParameter("lang");
 		LOGGER.debug("Province Country Code " + countryCode);
@@ -150,7 +151,7 @@ public class ReferenceController {
 	
 	@RequestMapping(value="/shop/reference/zoneName")
 	public @ResponseBody String zoneName(@RequestParam String zoneCode, HttpServletRequest request, HttpServletResponse response) {
-		
+			System.out.println("PR 1");
 		try {
 			Language language = languageUtils.getRequestLanguage(request, response);
 			if(language==null) {
