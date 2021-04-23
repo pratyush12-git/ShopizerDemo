@@ -40,14 +40,14 @@ public class FilesController extends AbstractController {
 	 */
 	@RequestMapping("/static/files/{storeCode}/{fileName}.{extension}")
 	public @ResponseBody byte[] downloadFile(@PathVariable final String storeCode, @PathVariable final String fileName, @PathVariable final String extension, HttpServletRequest request, HttpServletResponse response) throws IOException, ServiceException {
-
+		System.out.println("change");
 		// example -> /files/<store code>/myfile.css
 		FileContentType fileType = FileContentType.STATIC_FILE;
 		
 		// needs to query the new API
 		OutputContentFile file =contentService.getContentFile(storeCode, fileType, new StringBuilder().append(fileName).append(".").append(extension).toString());
 		
-		
+		System.out.println("change");
 		if(file!=null) {
 			return file.getFile().toByteArray();
 		} else {
