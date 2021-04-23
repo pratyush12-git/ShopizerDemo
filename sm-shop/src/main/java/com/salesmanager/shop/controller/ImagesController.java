@@ -173,7 +173,9 @@ public class ImagesController {
 		 * 
 		 */
 		
-		
+		System.out.println("PULL Change");
+		System.out.println("PULL Change");
+		System.out.println("PULL Change");
 		ProductImageSize size = ProductImageSize.SMALL;
 		
 		if(FileContentType.PRODUCTLG.name().equals(imageSize)) {
