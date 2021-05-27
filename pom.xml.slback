@@ -1,5 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.shopizer</groupId>
@@ -492,8 +494,7 @@
 		<dependency>
 			<groupId>org.elasticsearch</groupId>
 			<artifactId>elasticsearch</artifactId>
-			<version>${elasticsearch.version}</version>
-<!--$NO-MVN-MAN-VER$ -->
+			<version>${elasticsearch.version}</version><!--$NO-MVN-MAN-VER$ -->
 		</dependency>
 
 		<dependency>
@@ -642,51 +643,6 @@
 			</plugin> 
 			-->
 
-		<plugin>
-<groupId>io.sealights.on-premise.agents.plugin</groupId>
-<artifactId>sealights-maven-plugin</artifactId>
-<version>2.1.687</version>
-<configuration>
-<token>eyJhbGciOiJSUzUxMiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL1BST0QtQ1VTVE9NRVJTMi5hdXRoLnNlYWxpZ2h0cy5pby8iLCJqd3RpZCI6IlBST0QtQ1VTVE9NRVJTMixpLTBiMzA5ZWRlNzc3NGVlMDZiLEFQSUdXLWRjZWM1MWI0LWVlZGMtNDIwOC1iYWVhLTk0MGU5ZmMzNjUxOCwxNjE3ODY1MTI0NjM4Iiwic3ViamVjdCI6IndpcHJvQGFnZW50IiwiYXVkaWVuY2UiOlsiYWdlbnRzIl0sIngtc2wtcm9sZSI6ImFnZW50IiwieC1zbC1zZXJ2ZXIiOiJodHRwczovL3dpcHJvLnNlYWxpZ2h0cy5jby9hcGkiLCJzbF9pbXBlcl9zdWJqZWN0IjoiIiwiaWF0IjoxNjE3ODY1MTI0fQ.LjOsCapX7i5fdrlPgfuN4EKfmKx7wmoFTYZ6US3npmtmWf-4UJiS5QC39kcUQIT9tevsM0Vy0eZGI_kGb_BzDZpxjXzlKb05YJV5vySaV1FhbOWeYY69HJCH1se7mHM8xVEJBC59hEFqDeMQO0AWcjFyxTa-fBmrb8dRj1GuPNQmBLjpKFC51joZgcQOI353xgn2NO4iJs8RBZNhELDdmZAqkwvkEgqtlbcH_w66LZoHz3VuOF_yGfQ3chz2RP3DROjydrnkJ8AT7shfkkrvxVha7HJby6tf58wayp_ysmlVKBzfLeU35gz_FBL6EC3Np2APYI9LkEi1hNegUh9cNPc6rHcmGjIwbhvdMCcjcRqiJgY571djCCUV-P0xVYOx7ni9eB4DW_9N9g7Q5TjsKz4lgAoNjYGRM-wJH4mBphpAw6MSOSFbvSfz2iLL8gqxkyxlwBBkzYkZ4NgLqgM8ncABV6_gitKkSuodJsbkSp1LD5hgwRwcp6lRz4RVkhm1kVEvM03FDnoFSYWgquWlBH0sqbMiPdUeFsTXNNpa5hx-vF3JDl3ZIElqF6X1znEdQHZQEpH-av7oSwlca3FHwmTEvJ--No8vOBaqo4mk2KsC2536HQbI6M1qFufyWco-e2125t2UaqqQbmhsKnTpzerVcSiDge248_VL47rRyOg</token>
-<buildSessionId>a7480c76-4f81-4476-a746-106cab7e1e8c</buildSessionId>
-<createBuildSessionId>false</createBuildSessionId>
-<moduleName>${project.name}</moduleName>
-<workspacepath>${project.build.outputDirectory}</workspacepath>
-<build>6</build>
-<filesincluded>*.class</filesincluded>
-<filesStorage>D:\Sealights\FileStorage</filesStorage>
-<environment>Unit Tests</environment>
-<testStage>Unit Tests</testStage>
-<filesexcluded>*test-classes*</filesexcluded>
-<logLevel>OFF</logLevel>
-<logToConsole>true</logToConsole>
-<metadata>
-<jobName>ShopizerDemo</jobName>
-<logsUrl>http://localhost:8080/job/ShopizerDemo/6/console</logsUrl>
-</metadata>
-<includeResources>true</includeResources>
-</configuration>
-<executions>
-<execution>
-<id>a1</id>
-<goals>
-<goal>build-scanner</goal>
-</goals>
-</execution>
-<execution>
-<id>a2</id>
-<goals>
-<goal>test-listener</goal>
-</goals>
-</execution>
-<execution>
-<id>a3</id>
-<goals>
-<goal>prepare-test-listener</goal>
-</goals>
-</execution>
-</executions>
-</plugin>
-</plugins>
+		</plugins>
 	</build>
 </project>
